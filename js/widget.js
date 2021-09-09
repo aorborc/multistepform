@@ -139,5 +139,7 @@ function previewContent() {
 form.addEventListener('submit', logSubmit);
 function logSubmit(event) {
   event.preventDefault();
-  alert(`Form Submitted! Time stamp: ${new Date()}`);
-}
+  alert(`Form Submitted on ${new Date()}. Offline data will be cleared now.  `);
+  $('input').savy('destroy');
+  location.reload();
+} 
