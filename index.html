@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="widget.css" />
+  </head>
+  <body>
+    <form id="stepByStepForm" class="form">
+      <ul class="progress-bar">
+        <li class="progress-bar__dot full"></li>
+        <li class="progress-bar__connector"></li>
+        <li class="progress-bar__dot"></li>
+        <li class="progress-bar__connector"></li>
+        <li class="progress-bar__dot"></li>
+        <li class="progress-bar__connector"></li>
+        <li class="progress-bar__dot"></li>
+      </ul>
+
+      <div class="step step1">
+        <div class="input-group">
+          <label for="firstname">First name</label>
+          <input
+            type="text"
+            placeholder="James"
+            name="first_name"
+            id="first1name"
+            class="autosave"
+          />
+        </div>
+        <div class="input-group">
+          <label for="lastname">Last name</label>
+          <input
+            type="text"
+            placeholder="Smith"
+            name="lastname"
+            id="lastname"
+          />
+        </div>
+      </div>
+
+      <div class="step step2 hidden">
+        <div class="input-group">
+          <label for="mail">E-mail</label>
+          <input
+            type="mail"
+            placeholder="jamessmith@gmail.com"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            placeholder="06 XX XX XX XX"
+            name="phone"
+            id="phone"
+          />
+        </div>
+      </div>
+
+      <div class="step step3 hidden">
+        <div class="input-group">
+          <label for="address">Address</label>
+          <input
+            type="text"
+            placeholder="221B Baker Street"
+            name="address"
+            id="address"
+          />
+        </div>
+        <div class="input-group">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            placeholder="United States"
+            name="country"
+            id="country"
+          />
+        </div>
+      </div>
+      <div class="step step4 hidden">
+        <div class="preview">
+          <h1>Preview</h1>
+          <div id="preview">
+            <label></label>
+          </div>
+        </div>
+      </div>
+      <div class="button-group">
+        <button id="previous" class="disabled button" disabled>
+          previous
+        </button>
+        <button id="next" class="button">
+          next
+        </button>
+      </div>
+      <div class="button-group">
+        <button id="validate" type="submit" class="hidden button">
+          Save
+        </button>
+      </div>
+    </form>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/savy.min.js"></script>
+    <script src="js/widgetsdk-min.js"></script>
+    <script src="js/widget.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>

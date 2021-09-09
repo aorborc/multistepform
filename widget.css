@@ -1,0 +1,112 @@
+html {
+  background-color: #a2c7e5;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  width: 140px;
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 0.2em;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  transition: all 0.5s ease;
+  background-color: #ff8552;
+}
+.button:hover {
+  background-color: #ff4f06;
+}
+.button.disabled {
+  opacity: 0.5;
+}
+.button.disabled:hover {
+  background-color: #ff8552;
+}
+
+.form {
+  width: 20em;
+  margin: auto;
+  margin-top: 5em;
+  padding: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+  color: #33312e;
+  border-radius: 0.2em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.form .progress-bar {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 3.5em;
+}
+.form .progress-bar li.progress-bar__dot {
+  display: block;
+  width: 0.6em;
+  border-radius: 1000em;
+  height: 0.6em;
+  border: 0.2em solid #ff8552;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.form .progress-bar li.progress-bar__dot.full {
+  background-color: #ff8552;
+}
+.form .progress-bar li.progress-bar__connector {
+  display: block;
+  width: 5em;
+  border-radius: 1000em;
+  height: 0.1em;
+  background-color: #ff8552;
+  margin-top: 0.45em;
+}
+.form label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.form input {
+  width: 100%;
+  padding: 1.3em;
+  margin-bottom: 3em;
+  box-sizing: border-box;
+  margin-top: 1em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #e6e6e6;
+  font-size: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+.form input:focus {
+  border: none;
+}
+.form .button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.form button#validate {
+  margin: auto;
+  background-color: #1a936f;
+  width: 12em;
+}
+.form button#validate:hover {
+  background-color: #12684e;
+}
+.preview #preview {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}
