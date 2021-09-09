@@ -1,5 +1,5 @@
-console.log('hi');
 ZOHO.CREATOR.init().then(function(data) {
+  console.log(data);
   var queryParams = ZOHO.CREATOR.UTIL.getQueryParams();
   console.log(queryParams);
   formData = {};
@@ -13,5 +13,5 @@ ZOHO.CREATOR.init().then(function(data) {
     }
   });
 });
-$('input').savy('load');
 
+ZOHO.CREATOR.init().then(function(data) {});
