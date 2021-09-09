@@ -1,7 +1,7 @@
 ZOHO.CREATOR.init().then(function(data) {
-  console.log(data);
+  console.log('data : ', data);
   var queryParams = ZOHO.CREATOR.UTIL.getQueryParams();
-  console.log(queryParams);
+  console.log('Query : ', queryParams);
   formData = {};
   var config = {
     formName: 'timesheet',
@@ -13,5 +13,3 @@ ZOHO.CREATOR.init().then(function(data) {
     }
   });
 });
-
-ZOHO.CREATOR.init().then(function(data) {});
