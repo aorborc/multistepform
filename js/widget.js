@@ -89,6 +89,8 @@ function show(elem) {
 function hide(elem) {
   elem.classList.add('hidden');
 }
+//LocalStorage using savy
+$('input').savy('load');
 
 function previewContent() {
   console.log('final');
@@ -136,10 +138,12 @@ function previewContent() {
   preview.appendChild(countryLabel);
   preview.appendChild(hrEl);
 }
+
+
 form.addEventListener('submit', logSubmit);
 function logSubmit(event) {
   event.preventDefault();
   alert(`Form Submitted on ${new Date()}. Offline data will be cleared now.  `);
   $('input').savy('destroy');
   location.reload();
-} 
+}
