@@ -32,5 +32,5 @@ function logSubmit(event) {
   });
 
   $('input').savy('destroy');
-  location.reload();
+  //location.reload();
 }
