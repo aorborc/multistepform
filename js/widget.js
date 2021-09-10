@@ -100,7 +100,7 @@ function previewContent() {
   //Name
   const nameLabel = document.createElement('label');
   const nameText = document.createTextNode(
-    'Name : ' + formData.get('first_name') + ' ' + formData.get('lastname')
+    'Name : ' + formData.get('first_name') + ' ' + formData.get('last_name')
   );
   nameLabel.appendChild(nameText);
   preview.appendChild(nameLabel);
@@ -135,10 +135,10 @@ function previewContent() {
   preview.appendChild(hrEl);
 }
 
-// form.addEventListener('submit', logSubmit);
-// function logSubmit(event) {
-//   event.preventDefault();
-//   alert(`Form Submitted on ${new Date()}. Offline data will be cleared now.  `);
-//   $('input').savy('destroy');
-//   location.reload();
-// }
+form.addEventListener('submit', logSubmit);
+function logSubmit(event) {
+  event.preventDefault();
+  alert(`Form Submitted on ${new Date()}. Offline data will be cleared now.  `);
+  $('input').savy('destroy');
+  location.reload();
+}
