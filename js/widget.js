@@ -93,14 +93,10 @@ function hide(elem) {
 $('input').savy('load');
 
 function previewContent() {
-  console.log('final');
   const preview = document.getElementById('preview');
   preview.innerHTML = '';
   const hrEl = document.createElement('hr');
   let formData = new FormData(form);
-  for (let formEl of formData) {
-    console.log(formEl);
-  }
   //Name
   const nameLabel = document.createElement('label');
   const nameText = document.createTextNode(
@@ -139,11 +135,10 @@ function previewContent() {
   preview.appendChild(hrEl);
 }
 
-
-form.addEventListener('submit', logSubmit);
-function logSubmit(event) {
-  event.preventDefault();
-  alert(`Form Submitted on ${new Date()}. Offline data will be cleared now.  `);
-  $('input').savy('destroy');
-  location.reload();
-}
+// form.addEventListener('submit', logSubmit);
+// function logSubmit(event) {
+//   event.preventDefault();
+//   alert(`Form Submitted on ${new Date()}. Offline data will be cleared now.  `);
+//   $('input').savy('destroy');
+//   location.reload();
+// }
