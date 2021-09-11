@@ -1,7 +1,7 @@
 form.addEventListener('submit', logSubmit);
 
 function logSubmit(event) {
-  console.log('New form submit');
+  console.log('Updated Widget');
   event.preventDefault();
   ZOHO.CREATOR.init().then(function() {
     let myForm = document.getElementById('stepByStepForm');
